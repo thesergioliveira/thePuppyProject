@@ -8,30 +8,38 @@ div div{
 }
 div div img{
     border: solid 0.5px grey;
+    background-color: whitesmoke;
     padding: 0.5rem 0.5rem 2rem 0.5rem;
     width: 18rem;
     height: 12rem;
-    filter: opacity(0.7);
+    filter: opacity(0.8);
+    z-index: auto;
+    
 }
 
 .dog-friends{
     position: absolute;
     top: 6rem;
     left:10rem;
+    transform: rotate(-15deg);
+
 }
 
 .smiley{
    position: absolute;
-   top: 6rem;
+   top: 10rem;
    left:16rem;
+   transform: rotate(-5deg);
 }
 .dog-wall{
     position: absolute;
-    top: 6rem;
+    top: 14rem;
     left:20rem;
+    transform: rotate(5deg);
 }
 .four-dogs{
     position: absolute;
-    top: 6rem;
+    top: 18rem;
     left:26rem;
+    transform: rotate(15deg);
 }
