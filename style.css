@@ -1,7 +1,8 @@
+:root{
+    background-color:lightcyan;
+}
 div div{
-    
     float: left;
-    filter: grayscale(30) ;
     margin: 0.5rem;
 
     
@@ -13,7 +14,8 @@ div div img{
     width: 18rem;
     height: 12rem;
     filter: opacity(0.8);
-    z-index: auto;
+    
+    
     
 }
 
@@ -21,7 +23,9 @@ div div img{
     position: absolute;
     top: 6rem;
     left:10rem;
+    filter: grayscale(30) ;
     transform: rotate(-15deg);
+    z-index: 0;
 
 }
 
@@ -30,16 +34,66 @@ div div img{
    top: 10rem;
    left:16rem;
    transform: rotate(-5deg);
+   filter: grayscale(30) ;
+   z-index: 1;
 }
 .dog-wall{
     position: absolute;
     top: 14rem;
     left:20rem;
     transform: rotate(5deg);
+    filter: grayscale(30) ;
+    z-index: 2;
 }
 .four-dogs{
     position: absolute;
     top: 18rem;
     left:26rem;
     transform: rotate(15deg);
+    filter: grayscale(30) ;
+    z-index: 3;
+    transition: 600ms;
 }
+.dog-friends:hover{
+    position: absolute;
+    top: 6rem;
+    left:10rem;
+    transform: rotate(0deg);
+    filter: none;
+    z-index: 4;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+
+}
+
+.smiley:hover{
+    position: absolute;
+    top: 10rem;
+    left:16rem;
+    transform: rotate(0deg);
+    filter: none;
+    z-index: 4;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+}
+.dog-wall:hover{
+    position: absolute;
+    top: 14rem;
+    left:20rem;
+    transform: rotate(0deg);
+    z-index: 4;
+    filter: none;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+}
+.four-dogs:hover{
+    position: absolute;
+    top: 18rem;
+    left:26rem;
+    transform: rotate(0deg);
+    filter: none;
+    z-index: 3;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
